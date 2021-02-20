@@ -1,0 +1,98 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 35px repeat(5, 1fr) 35px 1fr 0.5fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "nav . main main main main main . sd .";
+  border: 1px solid purple;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+}
+
+header {
+  grid-area: hd;
+}
+
+.navigation {
+  grid-area: nav;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sd;
+}
+
+.navItem {
+  margin: 25px;
+}
+
+.main-content-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "ft1 ft1 ft1 ft2 ft2 ft2"
+    "ft1 ft1 ft1 ft2 ft2 ft2"
+    "ft3 ft3 ft4 ft4 ft5 ft5"
+    "ft3 ft3 ft4 ft4 ft5 ft5"
+    "ft3 ft3 ft4 ft4 ft5 ft5"
+    "six six six six six six";
+}
+
+.one {
+  grid-area: ft1;
+}
+
+.two {
+  grid-area: ft2;
+}
+
+.three {
+  grid-area: ft3;
+}
+
+.four {
+  grid-area: ft4;
+}
+
+.five {
+  grid-area: ft5;
+}
+
+.six {
+  grid-area: six;
+}
+
+.featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  margin: 25px;
+}
+
+.featured-large {
+  width: 325px;
+  height: 250px;
+}
+
+.featured-small {
+  width: 200px;
+  height: 250px;
+}
+
+.post {
+  width: 90%;
+  height: 150px;
+  margin: 15px;
+}
