@@ -1,3 +1,6 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 35px repeat(5, 1fr) 35px 1fr 0.5fr;
@@ -5,7 +8,7 @@
   grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "nav . main main main main main . sd .";
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 }
 
 .box {
@@ -13,11 +16,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid pink; */
+  position: relative;
+  /* top: 100px; */
+}
+
+.side-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid pink; */
+  position: relative;
+  /* top: 100px; */
+}
+
+.header-box {
+  text-align: left;
 }
 
 header {
   grid-area: hd;
+  background-color: #445c3c;
 }
 
 .navigation {
@@ -33,7 +59,7 @@ header {
 }
 
 .navItem {
-  margin: 25px;
+  margin: 30px;
 }
 
 .main-content-container {
@@ -77,8 +103,9 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  /* border: 2px solid green; */
   margin: 25px;
+  background-color: #ecf2dd;
 }
 
 .featured-large {
@@ -95,4 +122,33 @@ header {
   width: 90%;
   height: 150px;
   margin: 15px;
+  background-color: #ecf2dd;
+}
+
+.logo {
+  /* width: 100px; */
+  height: 70px;
+  margin: 10px;
+}
+
+.side-bar-container {
+  display: grid;
+  grid-template-rows: 300px 300px 1fr;
+  grid-template-columns: 200px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "bio"
+    "sub"
+    ".";
+  /* border: 2px solid purple; */
+}
+
+.bio {
+  grid-area: bio;
+  border: 3px solid #ecf2dd;
+}
+
+.sub {
+  grid-area: sub;
+  border: 3px solid #ecf2dd;
 }
