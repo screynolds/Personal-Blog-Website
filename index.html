@@ -4,42 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susie's Blog</title>
+    <title>Susie's World</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header-box"><img class="logo" src="images/noun_Writing_2043352.svg" alt="ink pen tip to paper"></header>
+        <header class="header-box">
+            <div class="logo-container">
+                <img class="logo" src="/images/globe.png" alt="globe">
+                <div class="logo-text">Susie's World</div>
+            </div>
+        </header>
         <div class="nav-box navigation">
-            <div class="navItem">Cooking</div>
-            <div class="navItem">Design</div> 
-            <div class="navItem">Music</div> 
-            <div class="navItem">Travel</div> 
+            <div class="nav-container">
+                <img class="nav-icon" src="/images/pot_orange.png" alt="pot">
+                <div class="nav-text">Cooking</div>
+            </div>
+            <div class="nav-container">
+                <img class="nav-icon" src="/images/angle_orange.png" alt="angle ruler">
+                <div class="nav-text">Design</div>
+            </div>
+            <div class="nav-container">
+                <img class="nav-icon" src="/images/palace_orange.png" alt="pagota">
+                <div class="nav-text">Travel</div>
+            </div>
+            <div class="nav-container">
+                <img class="nav-icon" src="/images/music-note_orange.png" alt="music note">
+                <div class="nav-text">Music</div>
+            </div> 
         </div>
-        <div class="box main-content">
-            <div class="main-content-container">
-                <div class="featured-container featured featured-large one">
-                    <div class="photo">Photo</div>
-                    <div class="title">Title</div>
+        <div class="main-content-container">
+            <div class="posts-container">
+                <div class="featured-post">
+                    <div class="featured-inner">
+                        <div class="featured-top">
+                            <img class="featured-image" src="/images/photo-frame_large.png" alt="photo frame"/>
+                            <div class="topic-wrapper">
+                                <div class="topic-label">Design</div>
+                            </div>
+                        </div>
+                        <div class="featured-bottom">
+                            <div class="featured-info">
+                                <p class="title">Common Image Aspect Ratios</p>
+                                <p class="post-description">The most used aspect ratios for film, digital, and phone photography.</p>
+                                <p class="post-date">March 4th, 2021</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured featured-large two">Two</div>
-                <div class="featured featured-small three">Three</div>
-                <div class="featured featured-small four">Four</div>
-                <div class="featured featured-small five">Five</div>
-                <div class="box six">
-                    <div class="box post">Post</div>
-                    <div class="box post">Post</div>
-                    <div class="box post">Post</div>
-                    <div class="box post">Post</div>
+                <div class="featured-post">
+                    <div class="featured-inner">
+                        <div class="featured-top">
+                            <img class="featured-image" src="/images/cocoa_large.png" alt="photo frame"/>
+                            <div class="topic-wrapper">
+                                <div class="topic-label">Cooking</div>
+                            </div>
+                        </div>
+                        <div class="featured-bottom">
+                            <div class="featured-info">
+                                <p class="title">Hot Cocoa Around the World</p>
+                                <p class="post-description">How this cozy winter drink is prepared across four different cultures.</p>
+                                <p class="post-date">February 28th, 2021</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="side-box sidebar">
-            <div class="side-bar-container">
-                <div class="box bio">Bio</div>
-                <div class="box sub">Subscribe</div>
+            <div class="recent-posts-container">
+                <div class="recent-post">
+                    <div class="post-inner">
+                        <div class="topic-label-small">Music</div>
+                        <div class="post-bottom">
+                            <div class="featured-info">
+                                <p class="title">February Favorites</p>
+                                <p class="post-description">My top songs this month.</p>
+                                <p class="post-date">February 26th, 2021</p>
+                            </div>
+                            <img src="images/play-button.png" alt="play arrow" class="post-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-posts-container">
+                <div class="recent-post">
+                    <div class="post-inner">
+                        <div class="topic-label-small">Music</div>
+                        <div class="post-bottom">
+                            <div class="featured-info">
+                                <p class="title">Soundcloud's New Fan-powered Royalties</p>
+                                <p class="post-description">A win for independent artists on the platform.</p>
+                                <p class="post-date">February 18th, 2021</p>
+                            </div>
+                            <img src="images/cloud.png" alt="cloud" class="post-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-posts-container">
+                <div class="recent-post">
+                    <div class="post-inner">
+                        <div class="topic-label-small">Travel</div>
+                        <div class="post-bottom">
+                            <div class="featured-info">
+                                <p class="title">Belize Trip - November 2019</p>
+                                <p class="post-description">Spearing lionfish and going slow.</p>
+                                <p class="post-date">February 11th, 2021</p>
+                            </div>
+                            <img src="images/beach.png" alt="hammock on beach" class="post-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-posts-container">
+                <div class="recent-post">
+                    <div class="post-inner">
+                        <div class="topic-label-small">Design</div>
+                        <div class="post-bottom">
+                            <div class="featured-info">
+                                <p class="title">Finding My Colors</p>
+                                <p class="post-description">What I've learned about skin tone and color theory for hair, clothing and makeup.</p>
+                                <p class="post-date">January 20th, 2021</p>
+                            </div>
+                            <img src="images/color-palette.png" alt="color palette" class="post-img">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer></footer>

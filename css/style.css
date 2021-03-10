@@ -1,20 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  background-color: #eee2df;
 }
 
 /* img {
   display: block;
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 } */
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 35px repeat(5, 1fr) 35px 1fr 0.5fr;
+  grid-template-columns: 1fr 35px repeat(6, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-    "hd hd hd hd hd hd hd hd hd hd"
-    "nav . main main main main main . sd .";
+    "hd hd hd hd hd hd hd hd"
+    "nav . main main main main main .";
   /* border: 1px solid purple; */
 }
 
@@ -35,129 +44,136 @@ body {
   /* top: 100px; */
 }
 
-.side-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* border: 2px solid pink; */
-  position: relative;
-  /* top: 100px; */
-}
-
 .header-box {
   text-align: left;
 }
 
 header {
   grid-area: hd;
-  background-color: #445c3c;
+  background-color: #b36a5e;
+  min-height: 100px;
 }
 
 .navigation {
   grid-area: nav;
 }
 
-.main-content {
-  grid-area: main;
-}
-
-.sidebar {
-  grid-area: sd;
-}
-
-.navItem {
+.nav-container {
+  display: flex;
+  flex-direction: row;
   margin: 30px;
+  align-items: center;
+}
+
+.nav-icon {
+  height: 55px;
+  width: 55px;
 }
 
 .main-content-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-areas:
-    "ft1 ft1 ft1 ft2 ft2 ft2"
-    "ft1 ft1 ft1 ft2 ft2 ft2"
-    "ft3 ft3 ft4 ft4 ft5 ft5"
-    "ft3 ft3 ft4 ft4 ft5 ft5"
-    "ft3 ft3 ft4 ft4 ft5 ft5"
-    "six six six six six six";
+  width: 100%;
+  margin: 20px auto;
+  /* border: solid 2px black; */
+  grid-area: main;
 }
 
-.one {
-  grid-area: ft1;
+.posts-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* border: solid 2px green; */
 }
 
-.two {
-  grid-area: ft2;
+.featured-post {
+  width: 50%;
+  padding: 20px;
 }
 
-.three {
-  grid-area: ft3;
+.featured-inner {
+  background: #eed7c5;
+  border: 2px solid #c97c5d;
 }
 
-.four {
-  grid-area: ft4;
+.featured-top {
+  width: 100%;
+  text-align: center;
+  /* min-height: 225px; */
+  /* padding: 10px;
+  padding-bottom: 0px; */
 }
 
-.five {
-  grid-area: ft5;
+.featured-bottom {
+  padding: 15px;
 }
 
-.six {
-  grid-area: six;
+.featured-category {
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.featured {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  /* border: 2px solid green; */
-  margin: 25px;
-  background-color: #ecf2dd;
+.featured-info {
+  padding: 15px;
+  /* margin: 10px 0; */
+  /* border: 1px dashed #0071bc; */
 }
 
-.featured-large {
-  width: 325px;
-  height: 250px;
+.post-description {
+  color: #b36a5e;
 }
 
-.featured-small {
+.post-date {
+  color: #b36a5e;
+  font-size: 16px;
+  font-family: "La Belle Aurore", cursive;
+  margin-top: 15px;
+}
+
+.featured-image {
   width: 200px;
-  height: 250px;
+  height: 200px;
+  /* border: 2px solid black; */
 }
 
-.post {
-  width: 90%;
-  height: 150px;
-  margin: 15px;
-  background-color: #ecf2dd;
+.title {
+  color: #b36a5e;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* text-align: center; */
+}
+
+.recent-post {
+  width: 100%;
+  padding: 20px;
+}
+
+.featured-top-small {
+  width: 100%;
+  /* min-height: 125px; */
+  /* padding: 10px;
+  padding-bottom: 0px; */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
-  /* width: 100px; */
-  height: 70px;
-  margin: 10px;
+  width: 100px;
+  height: 100px;
 }
 
-.side-bar-container {
-  display: grid;
-  grid-template-rows: 300px 300px 1fr;
-  grid-template-columns: 200px;
-  grid-gap: 10px;
-  grid-template-areas:
-    "bio"
-    "sub"
-    ".";
-  /* border: 2px solid purple; */
+.logo-text {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  color: #eee2df;
 }
 
-.bio {
-  grid-area: bio;
-  border: 3px solid #ecf2dd;
-}
-
-.sub {
-  grid-area: sub;
-  border: 3px solid #ecf2dd;
+.nav-text {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  color: #c97c5d;
 }
 
 .featured-container {
@@ -168,12 +184,55 @@ header {
     "title photo";
 }
 
-.photo {
-  grid-area: photo;
-  /* width: 200px; */
-  background-color: black;
+.topic-icon {
+  width: 60px;
+  height: 60px;
 }
 
-.title {
-  grid-area: title;
+.topic-label {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 20px;
+  color: #eee2df;
+}
+
+.topic-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #c97c5d;
+}
+
+.recent-posts-container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* border: solid 2px green; */
+}
+
+.post-bottom {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-img {
+  width: 140px;
+  height: 140px;
+}
+
+.topic-label-small {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 20px;
+  color: #eee2df;
+  background-color: #c97c5d;
+  padding-left: 15px;
+  width: 100px;
+  margin-top: 5px;
+}
+
+.post-inner {
+  background: #eed7c5;
+  border: 2px solid #c97c5d;
 }
