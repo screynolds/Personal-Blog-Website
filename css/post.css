@@ -1,0 +1,60 @@
+.post-container {
+  background-color: #d8cdcb;
+  padding: 15px;
+}
+
+.post-title {
+  font-family: "La Belle Aurore", cursive;
+  color: #b36a5e;
+  text-align: center;
+  padding: 0px 15px;
+  font-size: 3em;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.section-title {
+  color: #b36a5e;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.post-section {
+  margin: 30px;
+}
+
+.post-top {
+  margin: 15px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+p {
+  /* color: #4d4a48; */
+  color: #605857;
+}
+
+.section-img {
+  width: 375px;
+  height: 250px;
+}
+
+.image-with-text {
+  display: flex;
+}
+
+.paragraph-right {
+  margin: 0px 30px;
+  line-height: 2em;
+}
+
+.action-icon {
+  width: 45px;
+  height: 45px;
+}

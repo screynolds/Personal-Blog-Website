@@ -1,3 +1,5 @@
+@import url("post.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
   background-color: #eee2df;
+  background-color: white;
 }
 
 /* img {
@@ -70,6 +73,12 @@ header {
   width: 55px;
 }
 
+.nav-text {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  color: #b36a5e;
+}
+
 .main-content-container {
   width: 100%;
   margin: 20px auto;
@@ -89,8 +98,9 @@ header {
 }
 
 .featured-inner {
-  background: #eed7c5;
-  border: 2px solid #c97c5d;
+  /* background: #eed7c5; */
+  background: #d8cdcb;
+  /* border: 2px solid #c97c5d; */
 }
 
 .featured-top {
@@ -111,20 +121,24 @@ header {
 }
 
 .featured-info {
-  padding: 15px;
+  padding: 10px;
   /* margin: 10px 0; */
   /* border: 1px dashed #0071bc; */
 }
 
 .post-description {
-  color: #b36a5e;
+  /* color: #b36a5e; */
+  color: #605857;
+  font-size: 18px;
 }
 
 .post-date {
-  color: #b36a5e;
-  font-size: 16px;
+  /* color: #b36a5e; */
+  color: #605857;
+  font-size: 18px;
   font-family: "La Belle Aurore", cursive;
   margin-top: 15px;
+  /* margin: 0px; */
 }
 
 .featured-image {
@@ -170,12 +184,6 @@ header {
   color: #eee2df;
 }
 
-.nav-text {
-  font-family: "La Belle Aurore", cursive;
-  font-size: 30px;
-  color: #c97c5d;
-}
-
 .featured-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -189,18 +197,12 @@ header {
   height: 60px;
 }
 
-.topic-label {
-  font-family: "La Belle Aurore", cursive;
-  font-size: 20px;
-  color: #eee2df;
-}
-
 .topic-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #c97c5d;
+  /* background-color: #c97c5d; */
 }
 
 .recent-posts-container {
@@ -226,13 +228,14 @@ header {
   font-family: "La Belle Aurore", cursive;
   font-size: 20px;
   color: #eee2df;
-  background-color: #c97c5d;
-  padding-left: 15px;
-  width: 100px;
-  margin-top: 5px;
+  background-color: #b36a5e;
+  padding: 0px 15px;
+  width: fit-content;
+  /* margin-top: 10px; */
 }
 
 .post-inner {
-  background: #eed7c5;
-  border: 2px solid #c97c5d;
+  /* background: #eed7c5; */
+  /* background: #d8cdcb; */
+  /* border: 2px solid #c97c5d; */
 }
