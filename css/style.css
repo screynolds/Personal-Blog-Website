@@ -9,7 +9,11 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
   background-color: #eee2df;
-  background-color: white;
+  /* background-color: white; */
+}
+
+a {
+  text-decoration: none;
 }
 
 /* img {
@@ -54,7 +58,7 @@ body {
 header {
   grid-area: hd;
   background-color: #b36a5e;
-  min-height: 100px;
+  padding: 10px;
 }
 
 .navigation {
@@ -174,8 +178,8 @@ header {
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .logo-text {
